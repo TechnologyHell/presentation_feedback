@@ -4,8 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add this meta tag -->
     <title>Thank You</title>
     <link rel="icon" href="/assets/icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,11 +51,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 60vh;
+        height: 50vh;
         text-align: center;
     }
     .buttons img {
-        max-width: 60%;
+        max-width: 30%;
         height: auto; 
         margin-bottom: 20px; 
         transition: filter 0.3s ease;
@@ -64,6 +63,17 @@
     .buttons img:hover {
         filter: brightness(1.1);
     }
+
+    @media (max-width: 768px){
+        .buttons img {
+        max-width: 50%;
+        height: auto; 
+        margin-bottom: 20px; 
+        transition: filter 0.3s ease;
+    }
+    }
+
+
 </style>
 
 <body>
